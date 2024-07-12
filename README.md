@@ -1,2 +1,2 @@
-# Portfolio-Projects
-It contains all the portfolio projects
+# Data Analyst Portfolio-Projects
+These GitHub folders contain a comprehensive collection of projects that illustrate my skills and knowledge as data analyst. Each project serves as a testament to my expertise in analyzing bulk Data. I have curated these repositories to showcase my proficiency in Excel, SQL, Tableau and R. Whether it's complex SQL Queries or making Dashnoards, each repository demonstrates my ability to tackle complex challenges and deliver high-quality solutions. Feel free to explore these folders to gain a deeper understanding of my capabilities and experience.
