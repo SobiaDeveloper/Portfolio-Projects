@@ -1,1 +1,13 @@
+# Coffee Sales Data:
 
+Project Description:
+The Data in Excel file contains all the information of customers, orders and products. <br>
+It contains complete sales information to analyze the products sales
+
+Steps:
+1. First complete the orders table by taking all other information from another excel sheet like customer data , product data using lookup and index matc formulas
+2. Creating new columns for sales and remove abbreviations form data to be more clear 
+3. check for duplicates
+4. create multiple pivot tables 
+5. Insert timeline and slicers for more filters 
+6. create Dashboard
