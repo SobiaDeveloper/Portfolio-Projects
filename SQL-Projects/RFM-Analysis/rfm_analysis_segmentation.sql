@@ -93,7 +93,7 @@ from  RFM_Analysis.dbo.customer_shopping_data
 group by YEAR(invoice_date);
 
 
-
+--make new columns of last_order_date (recency),total_orders(frequency) and spending(monetary)
 select
   customer_id, gender, age, payment_method, shopping_mall, invoice_date,
   datediff(DAY,invoice_date,'2023-12-02') as last_date_order, --date format :yyyy-mm-dd
@@ -113,7 +113,7 @@ from RFM_Analysis.dbo.customer_shopping_data
  group by customer_id, gender, age, payment_method, shopping_mall, invoice_date
  order by last_date_order desc OFFSET 0 ROWS
  ),
- --select distinct total_orders from rfm_analysis 12-1;34-2;5-3 19767
+-- ranking them form 3-1
  rfm_calc as(
  select *,
   ntile(3) over (order by last_date_order) rfm_recency,
@@ -123,12 +123,12 @@ from RFM_Analysis.dbo.customer_shopping_data
  order by rfm_monetary desc OFFSET 0 ROWS
 ), 
  last_rfm as(
-
+-- calculate rfm score
 select *, rfm_recency + rfm_frequency + rfm_monetary as rfm_score,
 concat(rfm_recency, rfm_frequency, rfm_monetary) as rfm
 from rfm_calc
 )
-
+-- making group of customers
 select *, case
  when rfm in (311, 312, 311) then 'new customers'
  when rfm in (111, 121, 131, 122, 133, 113, 112, 132) then 'lost customers'
