@@ -103,9 +103,6 @@ from RFM_Analysis.dbo.customer_shopping_data
 group by customer_id, gender, age, payment_method, shopping_mall, invoice_date
 order by last_date_order asc
 
-
-
-
 with rfm as(
 		select
   customer_id, gender, age, payment_method, shopping_mall, invoice_date,
@@ -140,27 +137,3 @@ select *, case
  when rfm in (333, 332, 323, 233) then 'champion customers'
 end rfm_segment
  from last_rfm;
-
-
- 
-
-
-/*
-
--- 15-30 young customers; 31- 45 adults; 46-70 old
-Alter table RFM_Analysis.dbo.customer_shopping_data 
-add customer_age_distribution varchar(50)
-
-customer_age = select age from  RFM_Analysis.dbo.customer_shopping_data
-
-IF (customer_age >= 15 & customer_age <= 30 )
-    UPDATE RFM_Analysis.dbo.customer_shopping_data SET customer_age_distribution =  'young'
-	from Supermarket.dbo.supermarket_sales
-elif (age >= 31 & age <= 45)
-    UPDATE RFM_Analysis.dbo.customer_shopping_data SET customer_age_distribution =  'adult'
-	from Supermarket.dbo.supermarket_sales
-ELSE
-    UPDATE RFM_Analysis.dbo.customer_shopping_data SET customer_age_distribution =  'old'
-	from Supermarket.dbo.supermarket_sales
-
-	*/
