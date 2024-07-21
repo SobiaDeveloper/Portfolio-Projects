@@ -52,21 +52,56 @@ It would help to understand what stops the casual riders to be a members.
 
 - What tools are you choosing and why?<br>
 It is a huge amount of data, working in excel is a great mess so SQL(structured Query Language) is choosen to query the data.
-● Have you ensured your data’s integrity?
+● Have you ensured your data’s integrity?<br>
  I strive to maintain data integrity, by data validation, cleaing, security, documentations and assurance, which is essential for producing reliable insights and making informed decisions.
-● What steps have you taken to ensure that your data is clean?
+● What steps have you taken to ensure that your data is clean?<br>
 steps considered are:<br>
--  I start by understanding the structure, format, and quality of the raw data.
--  I identify missing data and decide on appropriate strategy.
--   I check for and eliminate duplicate records, ensuring each data point is unique and contributes appropriately to the analysis.
--   I standardize data formats (e.g., date formats, units of measurement) to ensure consistency and avoid discrepancies.
--   I perform transformations
+-  I start by understanding the structure, format, and quality of the raw data.<br>
+-  I identify missing data and decide on appropriate strategy.<br>
+-   I check for and eliminate duplicate records, ensuring each data point is unique and contributes appropriately to the analysis.<br>
+-   I standardize data formats (e.g., date formats, units of measurement) to ensure consistency and avoid discrepancies.<br>
+-   I perform transformations<br>
 -   Throughout these processes, I validate cleaned data to ensure that it meets quality standards and aligns with expected outcomes.<br>
   
-● How can you verify that your data is clean and ready to analyze?
+● How can you verify that your data is clean and ready to analyze?<br>
+In order to crosss check Data is clean and ready to analyze I asked for peer review and validation.<br>
 
 
-● Have you documented your cleaning process so you can review and share those results?
+● Have you documented your cleaning process so you can review and share those results?<br>
+Yes, I have documented all cleaning steps .<br>
+
+## Analyze
+● How should you organize your data to perform analysis on it?<br>
+First, all the different excel sheets ate populated in sql single table, all the column names are define according to their work.
+
+
+● Has your data been properly formatted?<br>
+Yes, data has been properly formatted.
+
+● What surprises did you discover in the data?<br>
+ Discovered a notable insight during our analysis: despite casual riders having significantly longer average ride durations, the number of rides taken by members far exceeds those taken by casual users. This discovery underscores the importance of data visualization in revealing such insights, as they are not readily apparent through data scrutiny alone.
+ 
+● What trends or relationships did you find in the data?<br>
+In our analysis, several noteworthy trends and relationships have emerged from the data:<br>
+
+Membership vs. Casual Usage: We observed that while casual riders tend to have longer average ride durations, <br>the volume of rides taken by members significantly surpasses that of casual users.<br><br>
+
+Days Variations: There is a clear pattern in ride frequency, with peak usage occurring during weekends. Casual rides are more on weekends<br><br>
+
+Geographical Insights: Geographic analysis revealed varying usage patterns across different regions, suggesting potential opportunities for targeted marketing campaigns or operational optimizations.<br><br>
+
+These insights were derived through rigorous data analysis and visualization techniques, enabling us to uncover nuanced trends and relationships that inform our strategic decisions moving forward.<br><br>
+
+● How will these insights help answer your business questions?<br>
+The insights derived from our data analysis will significantly contribute to addressing key business questions and informing strategic decisions in the following ways:<br><br>
+
+Optimized Resource Allocation: By understanding the variations in ride frequency and the geographic distribution of user preferences, we can allocate resources more effectively. <br><br>
+
+Targeted Marketing Strategies: Insights into user demographics and behavior will enable us to tailor marketing campaigns more precisely. For example, we can design promotions that resonate with different user segments based on their preferences and usage patterns, potentially increasing customer acquisition and retention rates.<br><br>
+
+Enhanced Customer Experience: Understanding the preferences and behaviors of different user segments allows us to personalize the customer experience. We can introduce features or services that cater to specific needs identified through the analysis, thereby enhancing overall satisfaction and loyalty.<br><br>
+
+Strategic Growth Initiatives: The identification of trends such as the dominance of member rides despite longer casual ride durations provides strategic direction. We can prioritize initiatives that encourage casual users to convert into members, potentially increasing recurring revenue and strengthening our market position.
 
 
 
