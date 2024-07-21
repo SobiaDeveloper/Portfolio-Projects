@@ -103,6 +103,8 @@ Enhanced Customer Experience: Understanding the preferences and behaviors of dif
 
 Strategic Growth Initiatives: The identification of trends such as the dominance of member rides despite longer casual ride durations provides strategic direction. We can prioritize initiatives that encourage casual users to convert into members, potentially increasing recurring revenue and strengthening our market position.
 
+## Share
+As for share, i have create a report and share with all stakeholders and team members with some recommendations at the end.
 
 
 
