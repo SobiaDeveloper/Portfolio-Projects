@@ -105,6 +105,17 @@ Strategic Growth Initiatives: The identification of trends such as the dominance
 
 ## Share
 As for share, I have created a presentation accessible and share with all stakeholders and team members including some recommendations at the end.
+Some glimpse of the report is shown here
+First of all, member and casual riders are compared by the type of bikes they are using.
+
+
+
+Next the number of trips distributed by the months, days of the week and hours of the day are examined.
+
+
+Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.
+
+To further understand the differences in casual and member riders, locations of starting and ending stations can be analysed. Stations with the most trips are considered using filters to draw out the following conclusions.
 
 
 
