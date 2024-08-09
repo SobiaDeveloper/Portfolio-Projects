@@ -2,18 +2,18 @@
 
 ## Introduction
 
-Welcome to the Cyclistic bike-share analysis case study! In this case study, will perform many real-world tasks of a junior dataanalyst for a fictional company.
-Working as a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of
+Welcome to the Cyclistic bike-share analysis case study! This case study will perform many real-world tasks of a junior data analyst for a fictional company.
+Worked as a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of
 marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, your
-team wants to understand how casual riders and annual members use Cyclistic bikes diff erently. From these insights, your team will
-design a new marketing strategy to convert casual riders into annual members. But fi rst, Cyclistic executives must approve your
+team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, your team will
+design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve your
 recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
 ## Goals:
 
-Company has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do
-that, however, the marketing analyst team needs to bett er understand how annual members and casual riders diff er, why casual
-riders would buy a membership, and how digital media could aff ect their marketing tactics. Moreno and her team are interested in
+The company has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. To do
+that, however, the marketing analyst team needs to better understand how annual members and casual riders differ, why casual
+riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in
 analyzing the Cyclistic historical bike trip data to identify trends.
 
 ## Steps
@@ -25,25 +25,25 @@ key business question:
 ### Ask Phase
 
 - What is the problem you are trying to solve?<br>
-To find out the reasons and ways and differences between both rider types (casual and members).
+To find out the reasons ways and differences between both rider types (casual and members).
 - How can your insights drive business decisions?<br> 
-It would help to understand what stops the casual riders to be a members.
+It would help to understand what stops the casual riders to be a member.
 
 ### Prepare Phase
 
 - Where is your data located?<br>
-  Data is provided to download.
+  Data is provided for download.
 - How is the data organized<br>
-  All Data is in excel sheet in rows and columns. All sheets contain the same columns. Each column define its meaning.
+  All Data is in an Excel sheet in rows and columns. All sheets contain the same columns. Each column defines its meaning.
 - Are there issues with bias or credibility in this data? Does your data ROCCC<br>
   As data is provided by own organization so there is no issues in the credibility of data. Data is reliable, original,  
-  comprehensive, current and cited, that is ROCCC. 
+  comprehensive, current, and cited, that is ROCCC. 
 - How are you addressing licensing, privacy, security, and accessibility?<br>
-  As far as privacy and security concerns no account detail of customers are given well other data is easily accessible.
+  As far as privacy and security concerns no account details of customers are given well other data is easily accessible.
 - How did you verify the data’s integrity?<br>
- As all of the data sheets have same column, same way of organizing data all formats are same.
+ As all of the data sheets have the same column, and the same way of organizing data all formats are the same.
 - How does it help you answer your question<br>
-  Seeing the data in the excel is hard to answer but through analyzing skills it definitely help to find all the answers.
+  Seeing the data in Excel is hard to answer but analyzing skills definitely help to find all the answers.
 - Are there any problems with the data?<br>
   Going through the data many of the values are missing.
 
@@ -51,20 +51,20 @@ It would help to understand what stops the casual riders to be a members.
 ###  Process
 
 - What tools are you choosing and why?<br>
-It is a huge amount of data, working in excel is a great mess so SQL(structured Query Language) is choosen to query the data.
+It is a huge amount of data, and working in Excel is a great mess so SQL(structured Query Language) is chosen to query the data.
 ● Have you ensured your data’s integrity?<br>
- I strive to maintain data integrity, by data validation, cleaing, security, documentations and assurance, which is essential for producing reliable insights and making informed decisions.
+ I strive to maintain data integrity, by data validation, cleaning, security, documentation, and assurance, which is essential for producing reliable insights and making informed decisions.
 ● What steps have you taken to ensure that your data is clean?<br>
 steps considered are:<br>
 -  I start by understanding the structure, format, and quality of the raw data.<br>
--  I identify missing data and decide on appropriate strategy.<br>
+-  I identify missing data and decide on the appropriate strategy.<br>
 -   I check for and eliminate duplicate records, ensuring each data point is unique and contributes appropriately to the analysis.<br>
 -   I standardize data formats (e.g., date formats, units of measurement) to ensure consistency and avoid discrepancies.<br>
 -   I perform transformations<br>
 -   Throughout these processes, I validate cleaned data to ensure that it meets quality standards and aligns with expected outcomes.<br>
   
 ● How can you verify that your data is clean and ready to analyze?<br>
-In order to crosss check Data is clean and ready to analyze I asked for peer review and validation.<br>
+In order to cross check Data is clean and ready to analyze I asked for peer review and validation.<br>
 
 
 ● Have you documented your cleaning process so you can review and share those results?<br>
@@ -72,11 +72,11 @@ Yes, I have documented all cleaning steps .<br>
 
 ## Analyze
 ● How should you organize your data to perform analysis on it?<br>
-First, all the different excel sheets ate populated in sql single table, all the column names are define according to their work.
+First, all the different Excel sheets ate populated in sql single table, all the column names are defined according to their work.
 
 
 ● Has your data been properly formatted?<br>
-Yes, data has been properly formatted.
+Yes, the data has been properly formatted.
 
 ● What surprises did you discover in the data?<br>
  Discovered a notable insight during our analysis: despite casual riders having significantly longer average ride durations, the number of rides taken by members far exceeds those taken by casual users. This discovery underscores the importance of data visualization in revealing such insights, as they are not readily apparent through data scrutiny alone.
@@ -104,18 +104,24 @@ Enhanced Customer Experience: Understanding the preferences and behaviors of dif
 Strategic Growth Initiatives: The identification of trends such as the dominance of member rides despite longer casual ride durations provides strategic direction. We can prioritize initiatives that encourage casual users to convert into members, potentially increasing recurring revenue and strengthening our market position.
 
 ## Share
-As for share, I have created a presentation accessible and share with all stakeholders and team members including some recommendations at the end.
+As for share, I have created a presentation accessible and shared with all stakeholders.
 Some glimpse of the report is shown here
-First of all, member and casual riders are compared by the type of bikes they are using.
-![comparision](Cyclistic-CaseStudy/viz/Comparision_MC_RT.png)
+First of all, member and casual riders are compared by the type of bikes they are using.<br>
+Next the number of trips distributed by the months, days of the week and hours of the day are examined.<br>
+Ride duration of the trips is compared to find the differences in the behavior of casual and member riders.<br>
+To further understand the differences between casual and member riders, starting and ending station locations can be analyzed. Stations with the most trips are considered using filters to draw out the following conclusions.
+
+## Limitations
+This analysis is done only for three months so there is no analysis regarding seasonal rides.
+
+## Takeaways:
+Casual riders have longer ride durations but members have more ride counts.<br>
+Both (electric and classic ) rideable types are more common in members than casuals.<br>
+casual use take more rides on weekends and members use more rides on weekdays.
 
 
-Next the number of trips distributed by the months, days of the week and hours of the day are examined.
 
 
-Ride duration of the trips are compared to find the differences in the behavior of casual and member riders.
-
-To further understand the differences in casual and member riders, locations of starting and ending stations can be analysed. Stations with the most trips are considered using filters to draw out the following conclusions.
 
 
 
