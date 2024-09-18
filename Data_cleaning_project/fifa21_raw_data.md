@@ -1,26 +1,28 @@
-
+# Introduction:
 Data analysis often begins with one of the most challenging steps: cleaning messy, unorganized datasets. In this project, I’ll use Python to clean and explore a raw FIFA 21 dataset containing detailed player information, including ratings, positions, and financial data. The dataset, sourced from Kaggle, has common issues like missing values, duplicates, inconsistent data types, and formatting errors.
-
+# Tools
 To make this happen, I’m using Visual Studio as my coding environment, with the Python extension to streamline the process. I aim to utilize Python’s powerful libraries, such as Pandas and NumPy, to transform this messy dataset into a clean, structured format.
+# Problem
 Upon a thorough review of the dataset, I found that it comprises two Excel files containing player information. However, these files exhibit several inconsistencies that hinder effective data integration and analysis. To enable meaningful analysis, it is important to first align the data columns between the two files.
 
-Data Issues Identified
+# Data Issues Identified
 When working with the FIFA 21 dataset, I encountered several key issues that needed to be addressed before any analysis could take place. Below are the main problems identified during the data cleaning process:
 
-Inconsistent Column Names:
-Both Excel files contained columns representing the same data but with different names, making it impossible to merge the datasets directly.
-Solution: Standardized the column names across both files to allow for proper integration.
-Line Breaks and Special Characters:
-Some columns contained unwanted line breaks or special characters (such as asterisks), affecting data readability and consistency.
-Solution: Removed the line breaks and special characters to clean the data for further analysis.
-Different Units of Measurement:
-The dataset had inconsistent units across the files, with some columns using different measurement systems (e.g., wages in different currencies or player values in varying formats).
-Solution: Converted all values to a common unit to ensure accurate comparisons and consistency.
+- __Inconsistent Column Names:__
+Both Excel files contained columns representing the same data but with different names, making it impossible to merge the datasets directly.<br>
+    *Solution:* Standardized the column names across both files to allow for proper integration.
+- __Line Breaks and Special Characters:__
+Some columns contained unwanted line breaks or special characters (such as asterisks), affecting data readability and consistency.<br>
+    *Solution:* Removed the line breaks and special characters to clean the data for further analysis.
+- __Different Units of Measurement:__
+The dataset had inconsistent units across the files, with some columns using different measurement systems (e.g., wages in different currencies or player values in varying formats).<br>
+*Solution:* Converted all values to a common unit to ensure accurate comparisons and consistency.
 Formatting and Data Type Discrepancies:
-Various columns had mixed data types (e.g., numerical data stored as strings), leading to processing issues.
-Solution: Corrected the data types to ensure that numerical and categorical data were handled appropriately.
+- __Various columns had mixed data types__ (e.g., numerical data stored as strings), leading to processing issues.<br>
+*Solution:* Corrected the data types to ensure that numerical and categorical data were handled appropriately.
 By addressing these inconsistencies, I will prepare a unified dataset that facilitates comprehensive analysis and provides reliable insights into the player data from FIFA 21.
-
+<br><br>
+```
 import pandas as pd
 import re #for regular expressions
 from datetime import datetime #for datetime query
@@ -152,7 +154,7 @@ plt.show()
 
 # Save the combined DataFrame to a new CSV file
 combined_df.to_csv('combined_fifa_data_file.csv', index=False)
+```
+# Conclusion:
 Data cleaning is an essential step before any meaningful analysis. By resolving inconsistencies in column names, units, and formatting, I transformed the messy FIFA 21 dataset into a clean, structured form. With this foundation in place, the dataset is now ready for deeper exploration and valuable insights.
 
-Beginners Project
-Cleaning Data Python
